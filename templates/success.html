@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Details</title>
+  </head>
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    div#hd {
+      height: 100%;
+      background-image: url(https://www.wallpapertip.com/wmimgs/220-2207412_car-background-wallpaper.jpg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      padding-left: 30px;
+      font-family: sans-serif;
+    }
+
+    
+.output{
+	width: 300px;
+	height:max-content;
+	text-align: center;
+	background-color: black;
+	opacity: 0.8;
+	color:white;
+	margin-top:100px;
+	padding:20px;
+  border-radius:20px
+}
+	
+  </style>
+  <body>
+    <div id="hd">
+     
+		<div id="d1" class="output">
+			<p>File uploaded successfully</p>
+			<p>File Name : {{name}}</p>
+			{% if text %}
+			<b>Number : {{text}}</b> {% else %}
+			<b>Unable to detect Number Plate</b>
+			{% endif %}
+		  </div>
+	
+    </div>
+  </body>
+</html>

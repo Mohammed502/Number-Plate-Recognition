@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>Number Plate Recognition</title>
+  </head>
+  <style>
+    body{ margin: 0; 
+         padding:0;
+       }
+   
+    div#hd{ 
+         height:100vh; 
+         background-image: url('https://www.wallpapertip.com/wmimgs/220-2207412_car-background-wallpaper.jpg'); 
+         background-size: cover; 
+         background-position:center; 
+         display: flex; 
+         justify-content: left; 
+         padding-left:30px; 
+         font-family: sans-serif; 
+         } 
+   
+    h1{ text-align:center;
+        margin-left:50px;
+        margin-top:160px;
+        color:#fff; 
+        margin-bottom:20px; 
+        font-size: 40px;  
+        letter-spacing: 2px;
+      }
+   
+      div#cmdbox { 
+                 margin-top:20px;
+                 width:400px; 
+                 height:70px; 
+                 /* align:center */
+                 margin-left:280px;
+                 background-color:rgba(0,0,0,0.5);
+                 color:#fff; 
+                 padding:20px; 
+                 font-size:25px
+               }
+   
+    input#d1{ width:450px; 
+              height:30px; 
+              padding:10px; 
+              border:none; 
+              border-radius:25px; 
+              outline:none;
+            }
+   
+    button { height:40px; 
+             width:100px; 
+             background: lightblue; 
+             border:none; 
+             color: #000; 
+             border-radius: 25px; 
+           }
+
+    button:hover{ background:darkblue; 
+                  cursor: pointer; 
+                color:white}
+   
+   </style>
+  <body>
+    <div id="hd">
+        
+        <form
+        action="/success"
+        method="post"
+        enctype="multipart/form-data"
+        class="form-horizontal"
+        >
+        <h1>License Number Plate Recognition System</h1>
+      <div id="cmdbox">
+          <input type="file" name="file"/>
+          <button type="submit" value="Upload" >Upload</button>
+        </div>
+    </form>
+</div>
+    
+  </body>
+</html>
